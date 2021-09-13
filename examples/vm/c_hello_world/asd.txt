@@ -1,0 +1,54 @@
+
+main.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	04 00                	add    $0x0,%al
+   2:	00 00                	add    %al,(%eax)
+   4:	0c 00                	or     $0x0,%al
+   6:	00 00                	add    %al,(%eax)
+   8:	05 00 00 00 47       	add    $0x47000000,%eax
+   d:	4e                   	dec    %esi
+   e:	55                   	push   %ebp
+   f:	00 02                	add    %al,(%edx)
+  11:	00 00                	add    %al,(%eax)
+  13:	c0 04 00 00          	rolb   $0x0,(%eax,%eax,1)
+  17:	00 03                	add    %al,(%ebx)
+  19:	00 00                	add    %al,(%eax)
+  1b:	00 f3                	add    %dh,%bl
+  1d:	0f 1e fb             	nop    %ebx
+  20:	66 55                	push   %bp
+  22:	66 89 e5             	mov    %sp,%bp
+  25:	f4                   	hlt    
+  26:	90                   	nop
+  27:	66 5d                	pop    %bp
+  29:	66 c3                	retw   
+  2b:	00 14 00             	add    %dl,(%eax,%eax,1)
+  2e:	00 00                	add    %al,(%eax)
+  30:	00 00                	add    %al,(%eax)
+  32:	00 00                	add    %al,(%eax)
+  34:	01 7a 52             	add    %edi,0x52(%edx)
+  37:	00 01                	add    %al,(%ecx)
+  39:	7c 08                	jl     0x43
+  3b:	01 1b                	add    %ebx,(%ebx)
+  3d:	0c 04                	or     $0x4,%al
+  3f:	04 88                	add    $0x88,%al
+  41:	01 00                	add    %eax,(%eax)
+  43:	00 1c 00             	add    %bl,(%eax,%eax,1)
+  46:	00 00                	add    %al,(%eax)
+  48:	1c 00                	sbb    $0x0,%al
+  4a:	00 00                	add    %al,(%eax)
+  4c:	d0 ff                	sar    %bh
+  4e:	ff                   	(bad)  
+  4f:	ff 0f                	decl   (%edi)
+  51:	00 00                	add    %al,(%eax)
+  53:	00 00                	add    %al,(%eax)
+  55:	46                   	inc    %esi
+  56:	0e                   	push   %cs
+  57:	08 85 02 43 0d 05    	or     %al,0x50d4302(%ebp)
+  5d:	44                   	inc    %esp
+  5e:	c5 0c 04             	lds    (%esp,%eax,1),%ecx
+  61:	04 00                	add    $0x0,%al
+	...

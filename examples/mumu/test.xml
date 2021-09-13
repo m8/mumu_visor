@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ARINC_653_Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="ARINC_653_ModuleMC_NS" ModuleId="1" ModuleName="Module 1" ModuleVersion="Çar, 14 Tem 2021">
+  <Partitions>
+    <Partition>
+      <PartitionDefinition Identifier="1" Name="test1" BinaryPath="/home/musa/Desktop/Tübitak/Source/test.bin" AutoStart="true" EntryPoint="main" ScheduleChangeAction="IDLE" SetModuleSchedule="false" SystemPartition="true"/>
+      <PartitionPeriodicity Duration="20000000" Period="3000"/>
+      <CoreAffinity>
+        <CoreMapping LogicalCoreId="0" PhysicalCoreId="3"/>
+        <CoreMapping LogicalCoreId="1" PhysicalCoreId="2"/>
+      </CoreAffinity>
+    </Partition>
+    <Partition>
+      <PartitionDefinition Identifier="2" Name="test2" BinaryPath="/home/musa/Desktop/Tübitak/Source/test_loop.bin" AutoStart="true" EntryPoint="main" ScheduleChangeAction="IDLE" SetModuleSchedule="false" SystemPartition="true"/>
+      <PartitionPeriodicity Duration="20000000" Period="2000"/>
+      <CoreAffinity>
+        <CoreMapping LogicalCoreId="0" PhysicalCoreId="3"/>
+        <CoreMapping LogicalCoreId="1" PhysicalCoreId="2"/>
+      </CoreAffinity>
+    </Partition>
+  </Partitions>
+  <Schedules MajorFrameDuration="240000000" ScheduleIdentifier="1" InitialModuleSchedule="true" ScheduleName="Schedule 1">
+    <PartitionTimeWindow PartitionNameRef="test1" Duration="2000" Offset="0" PeriodicProcessingStart="true"/>
+    <PartitionTimeWindow PartitionNameRef="test2" Duration="2000" Offset="20000000" PeriodicProcessingStart="true"/>
+    <PartitionTimeWindow PartitionNameRef="test1" Duration="2000" Offset="40000000" PeriodicProcessingStart="true"/>
+    <PartitionTimeWindow PartitionNameRef="test1" Duration="2000" Offset="60000000" PeriodicProcessingStart="true"/>
+  </Schedules>
+</ARINC_653_Module>

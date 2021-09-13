@@ -1,3 +1,7 @@
 uftrace*
 *.profile
 *dat.cpu*
+.out
+Tests
+lib.zip
+*.out
