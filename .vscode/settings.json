@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "atomic": "cpp",
+        "cstdint": "cpp",
+        "*.tcc": "cpp",
+        "unordered_map": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "numeric": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "vector": "cpp",
+        "chrono": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "optional": "cpp",
+        "ranges": "cpp",
+        "iostream": "cpp",
+        "deque": "cpp",
+        "string": "cpp"
+    }
+}

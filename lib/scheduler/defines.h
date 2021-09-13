@@ -1,0 +1,1 @@
+#define CORE_COUNT 4
