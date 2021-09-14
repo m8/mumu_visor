@@ -1,5 +1,8 @@
 # mumu
 
+![](https://img.shields.io/github/commit-activity/m/m8/mumu_visor) ![](https://img.shields.io/tokei/lines/github/m8/mumu_visor) ![](https://img.shields.io/github/license/m8/mumu_visor) ![](https://img.shields.io/github/contributors/m8/mumu_visor)
+
+
 *mumu* is a hobby hypervisor-ish. mumu can be a good resource to learn virtualization, hypervisors and KVM right now. In the future, who knows, it may become a real hypervisor.
 
 ```
