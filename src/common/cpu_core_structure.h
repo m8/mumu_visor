@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../kvm/vcpu.h"
+#include "../kvm/vcpu.hpp"
 
 // Core mapping structure
 struct core

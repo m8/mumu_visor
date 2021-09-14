@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "../hypervisor/kvm/vcpu.h"
+#include "../hypervisor/kvm/vcpu.hpp"
 #include "cpu_core_structure.h"
 
 // Defines simple VM structure

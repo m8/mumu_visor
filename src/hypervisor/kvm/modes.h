@@ -4,9 +4,9 @@
 #include <string.h>
 #include <stdint.h>
 
-#include "kvm.h"
-#include "vcpu.h"
-#include "vm.h"
+#include "kvm.hpp"
+#include "vcpu.hpp"
+#include "vm.hpp"
 #include "defines.h"
 
 void setup_protected_mode(VCPU *vcpu)

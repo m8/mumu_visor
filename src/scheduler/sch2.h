@@ -4,7 +4,7 @@
 #include "signal.h"
 #include "time.h"
 
-#include "../kvm/vm.h"
+#include "../kvm/vm.hpp"
 #include "../kvm/defines.h"
 #include "../common/window_structure.h"
 #include "./defines.h"

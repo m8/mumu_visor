@@ -2,7 +2,7 @@
 #define SCH_H
 
 #include <list>
-#include "../kvm/vm.h"
+#include "../kvm/vm.hpp"
 #include "../kvm/defines.h"
 #include "signal.h"
 #include "time.h"

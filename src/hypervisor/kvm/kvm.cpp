@@ -4,7 +4,7 @@
 #include <linux/kvm.h>
 #include <semaphore.h>
 
-#include "kvm.h"
+#include "kvm.hpp"
 
 int KVM::init() {
     

@@ -7,8 +7,8 @@
 #include <linux/kvm.h>
 #include <vector>
 
-#include "vcpu.h"
-#include "kvm.h"
+#include "vcpu.hpp"
+#include "kvm.hpp"
 
 class VM
 {

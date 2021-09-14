@@ -4,8 +4,8 @@
 #include <sys/mman.h>
 #include <unistd.h>
 
-#include "vm.h"
-#include "kvm.h"
+#include "vm.hpp"
+#include "kvm.hpp"
 #include "defines.h"
 
 // #define SCHED_ON

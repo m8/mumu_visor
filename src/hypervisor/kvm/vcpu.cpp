@@ -12,9 +12,9 @@
 #include <unistd.h>
 #include <thread>
 
-#include "vcpu.h"
+#include "vcpu.hpp"
 #include "defines.h"
-#include "kvm.h"
+#include "kvm.hpp"
 #include "../hw/serial.hpp"
 
 VCPU::VCPU(int fd, int mmap_size, struct kvm_run *_kvm_run, int _id)

@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "./elf.hpp"
-#include "../kvm/vm.h"
+#include "../kvm/vm.hpp"
 #include "../../tools/exec.h"
 
 vector<elf_parser::section_t> secs;

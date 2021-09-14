@@ -7,8 +7,8 @@
 #include <sys/mman.h>
 
 
-#include "vm.h"
-#include "kvm.h"
+#include "vm.hpp"
+#include "kvm.hpp"
 
 using namespace std;
 

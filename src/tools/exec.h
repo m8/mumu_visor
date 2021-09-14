@@ -7,6 +7,9 @@
 #include <string>
 #include <array>
 
+
+// Execute bash commands
+
 std::string exec(const char* cmd) {
     std::array<char, 128> buffer;
     std::string result;

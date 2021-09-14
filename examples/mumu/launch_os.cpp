@@ -1,9 +1,9 @@
 #include <iostream>
 #include <list>
 
-#include "../src/hypervisor/kvm/kvm.h"
-#include "../src/hypervisor/kvm/vm.h"
-#include "../src/hypervisor/kvm/vcpu.h"
+#include "../src/hypervisor/kvm/kvm.hpp"
+#include "../src/hypervisor/kvm/vm.hpp"
+#include "../src/hypervisor/kvm/vcpu.hpp"
 
 #include "../src/xml/xml_parser.h"
 #include <fstream>
