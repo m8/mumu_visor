@@ -3,13 +3,12 @@
 #include <stdint.h>
 #include <string>
 #include <iostream>
-#include "./vm_structure.h"
 
-using namespace std;
+#include "./vm_structure.h"
 
 struct ChannelNode
 {
-    string name;
+    std::string name;
     vm_structure* vm;
 };
 
