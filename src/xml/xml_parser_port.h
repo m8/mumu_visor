@@ -9,10 +9,10 @@
 #include <algorithm>
 #include <map>
 
-#include "../common/vm_structure.h"
-#include "../common/channel_structure.h"
+#include "../common/vm_structure.hpp"
+#include "../common/channel_structure.hpp"
 #include "../common/window_structure.h"
-#include "../common/cpu_core_structure.h"
+#include "../common/cpu_core_structure.hpp"
 #include "../scheduler/defines.h"
 
 

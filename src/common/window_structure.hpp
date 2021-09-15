@@ -1,6 +1,6 @@
 #pragma once
 
-#include "./vm_structure.h"
+#include "./vm_structure.hpp"
 
 struct window_structure
 {

@@ -4,7 +4,7 @@
 #include <string>
 #include <iostream>
 
-#include "./vm_structure.h"
+#include "./vm_structure.hpp"
 
 struct ChannelNode
 {
