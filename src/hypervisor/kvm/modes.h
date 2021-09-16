@@ -17,7 +17,7 @@ void setup_protected_mode(VCPU *vcpu)
         exit(1);
     }
 
-    vcpu->setup_segment_registers();
+    vcpu->set_segment_registers();
 
     if (ioctl(vcpu->vcpu_fd, KVM_SET_SREGS, &(vcpu->sregs)) < 0)
     {

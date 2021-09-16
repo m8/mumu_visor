@@ -174,8 +174,5 @@ int VM::vm_irq_trigger(int irq)
 	irq_level.level = 1;
 
 	int ret = ioctl(this->fd, KVM_IRQ_LINE, &irq_level);
-#ifdef DEBUG
-    cout << "IRQ trigger ret: " << ret << endl;
-#endif
     return ret;
 }

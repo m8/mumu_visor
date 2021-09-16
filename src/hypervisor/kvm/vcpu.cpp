@@ -73,7 +73,7 @@ int VCPU::run_real_mode()
     return 0;
 }
 
-void VCPU::setup_segment_registers(){
+void VCPU::set_segment_registers(){
     
     struct kvm_segment seg = {
         .base = 0,
