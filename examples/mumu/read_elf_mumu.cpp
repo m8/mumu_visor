@@ -2,12 +2,12 @@
 #include <list>
 #include <fstream>
 
-#include "../src/hypervisor/kvm/kvm.hpp"
-#include "../src/hypervisor/kvm/vm.hpp"
-#include "../src/hypervisor/kvm/vcpu.hpp"
-#include "../src/hypervisor/kvm/modes.h"
+#include "../../src/hypervisor/kvm/kvm.hpp"
+#include "../../src/hypervisor/kvm/vm.hpp"
+#include "../../src/hypervisor/kvm/vcpu.hpp"
+#include "../../src/hypervisor/kvm/modes.h"
 
-#include "../src/hypervisor/loader/mumu_elf.hpp"
+#include "../../src/hypervisor/loader/mumu_elf.hpp"
 #include <inttypes.h>
 
 using namespace std;
@@ -22,8 +22,8 @@ int main()
 
     vm->mem_init();
 
-    load_elf("/home/musa/Desktop/Tübitak/mumu_visor/Hello World/elf/prog",vm);
-    auto s_address = get_entry_address("/home/musa/Desktop/Tübitak/mumu_visor/Hello World/elf/prog");
+    load_elf("/home/musa/Desktop/Tübitak/mumu_visor/examples/vm/hello_world/prog",vm);
+    auto s_address = get_entry_address("/home/musa/Desktop/Tübitak/mumu_visor/examples/vm/hello_world/prog");
     
     run_long_mode(vm,vm->vcpus[0],s_address);
 
