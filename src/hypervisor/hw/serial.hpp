@@ -4,10 +4,10 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#define PORT 0x2f8
-#define O_RDONLY 00
-#define O_WRONLY 01
-#define O_RDWR 02
+#define PORT        0x2f8
+#define O_RDONLY    00
+#define O_WRONLY    01
+#define O_RDWR      02
 
 std::string port = "/dev/ttyS10";
 std::string buffer = "";
