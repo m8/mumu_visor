@@ -10,13 +10,7 @@
 
 struct vm_structure
 {
-    int id = 0;
-    std::string name = "";
-    std::string binary_path = "";
-    vector<core*> cores;
-    VM* vm;
-
-    vm_structure(){};
+    vm_structure() = default;
 
     vm_structure(int _id, std::string _name, std::string _binary_path){
         this->id = _id;
@@ -24,4 +18,10 @@ struct vm_structure
         this->binary_path = _binary_path;
     };
 
+    VM* vm;
+    vector<core*> cores;
+
+    std::string name = "";
+    std::string binary_path = "";
+    int id = 0;
 };
