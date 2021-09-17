@@ -21,7 +21,8 @@ struct vm_structure
     VM* vm;
     vector<core*> cores;
 
-    std::string name = "";
+    std::string name        = "";
     std::string binary_path = "";
+    
     int id = 0;
 };
