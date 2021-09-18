@@ -143,7 +143,7 @@ lock:
                 }
                 else{
                     // port_write(*(int *)((char *)(this->kvm_run) + this->kvm_run->io.data_offset));
-                    printf("id: %d core: %d id: %d data: %c\n", gettid(), this->physical_core, this->id, *(int *)((char *)(this->kvm_run) + this->kvm_run->io.data_offset));
+                    printf("id: %d core: %d id: %d data: %d\n", gettid(), this->physical_core, this->id, *(int *)((char *)(this->kvm_run) + this->kvm_run->io.data_offset));
                 }
                 std::this_thread::sleep_for(std::chrono::milliseconds(100));
                 break;
