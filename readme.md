@@ -21,6 +21,13 @@
            /__/
 ```
 
+## features
+- multicore support
+- can run 64bit x86 assembly and C programs
+- serial console implementation
+- static configuration through xml file
+- shared memory with sampling port implementation
+
 ## hello world
 
 it's very easy to run virtual machines under mumu.
