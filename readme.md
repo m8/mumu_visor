@@ -22,6 +22,8 @@
 ```
 
 ## features
+- can run multiple vms
+- static scheduler
 - multicore support
 - can run 64bit x86 assembly and C programs
 - serial console implementation
