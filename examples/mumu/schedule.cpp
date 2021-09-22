@@ -4,7 +4,7 @@
 #include "src/hypervisor/kvm/kvm.hpp"
 #include "src/hypervisor/kvm/vm.hpp"
 #include "src/hypervisor/kvm/vcpu.hpp"
-#include "src/scheduler/sch2.h"
+#include "src/scheduler/sch2.hpp"
 
 #include "src/xml/xml_parser.h"
 #include <fstream>
