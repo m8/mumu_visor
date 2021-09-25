@@ -85,7 +85,7 @@ void VM::load_text_binary(uint8_t code[],int code_len){
   memcpy((void*)((size_t)this->mem), code, code_len);
 }
 
-int VM::mem_init()
+int VM::mem_init(unsigned long long mem_size = RAM_SIZE)
 {
     struct kvm_userspace_memory_region mem;
 
@@ -103,7 +103,7 @@ int VM::mem_init()
     mem.flags = 0;
     mem.slot = 0;
     mem.guest_phys_addr = 0x0;
-    mem.memory_size = RAM_SIZE;
+    mem.memory_size = mem_size;
     mem.userspace_addr = (uint64_t)this->mem;
 
     int ret = ioctl(this->fd, KVM_SET_USER_MEMORY_REGION, &(mem));

@@ -25,10 +25,10 @@ public:
     void run_vm(int);
     void stop_vm();
 
-    int vm_irq_line(int irq, int level);
-    int vm_irq_trigger(int irq);
+    int vm_irq_line(int, int);
+    int vm_irq_trigger(int);
 
-    int mem_init();
+    int mem_init(unsigned long long);
 
 
     // Public variables
